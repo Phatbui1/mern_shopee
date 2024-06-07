@@ -1,7 +1,5 @@
 import { memo } from "react";
 const Header = () => {
-    return <>
-        <h1>Header</h1>
-    </>;
+    return <div className="container">Header</div>
 };
 export default memo(Header);
