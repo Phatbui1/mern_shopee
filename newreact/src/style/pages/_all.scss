@@ -1,5 +1,6 @@
 @use"sass:map"; // thư viện sas npm i sass
 @import "theme";
+@import "reponsive";
 html,
 body {
     margin :0;
@@ -14,5 +15,44 @@ body {
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
-    background: map-get($theme-colors,"main");
+    margin:auto;
 }
+.row {
+    display :flex;
+    flex-wrap: wrap;
+
+}
+.col-6{
+    flex :0 0 50%;
+    max-width: 50%;
+}
+.col-lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+.col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+@include Responsive($DESKTOP) {
+    .col-xl-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+        background-color: green;
+    }
+        .col-xl-6 {
+            flex: 0 0 50%;
+            max-width: 50%;
+            background-color: rosybrown;
+        }
+}
+@include Responsive($MEDIUM_DEVICE){
+    .col-lg-3{
+        flex :0 0 25%;
+        max-width: 25%;
+        background-color: red;
+    }
+}
+@include Responsive($SMALL_DEVICE) {
+
+    }

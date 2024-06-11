@@ -1,0 +1,15 @@
+.footer{
+    .footer__about{
+        margin-bottom: 30px;
+        .footer__about__LOGO {
+         margin-bottom: 15px;
+         display: inline-block;
+        }
+    }
+    .footer__about ul li{
+     font-size: 16px;
+     color:purple;
+     line-height: 36px;
+     list-style:none;
+    }
+}
