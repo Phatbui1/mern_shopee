@@ -8,8 +8,8 @@ const Footer = () => {
         <footer className="footer">
             <div className="container">
                 <div className="row">
-                    <div className="footer__about">
-                        <h1 className="foot__about__LOGO">TAN NIGGA</h1>
+                    <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <h2 className="foot__about__LOGO">Tấn Phát</h2>
                         <ul>
                             <li>Điachi:TPHCM</li>
                             <li>PHONE:0908xxxxx</li>
@@ -29,11 +29,12 @@ const Footer = () => {
                                 <li>
                                     <Link to="">Sản Phẩm</Link>
                                 </li>
-                            </ul>
-                            <ul>
                                 <li>
                                     <Link to="">Thông tin tài khoản</Link>
                                 </li>
+                                
+                            </ul>
+                            <ul>
                                 <li>
                                     <Link to="">Độ Tin Cậy</Link>
                                 </li>
@@ -43,29 +44,31 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="col-lg-3">Khuyến Mãi và Ưu Đãi</div>
-                    <p>
-                        đăng ký nhận thông tin tại đây 
-                    </p>
-                    <form action="#">
-                        <div>
-                     <input type="text" placeholder="nhập email vào"/>
-                        <button type="submit"className="button-submit">
-                            Đăng ký
-                        </button>
-                        </div>
-                        <div className="footer__widget__social">
-                            <div>
-                                <FaFacebook/>
+                    <div className="col-lg-3 ">Khuyến Mãi và Ưu Đãi
+                        <p>
+                            đăng ký nhận thông tin tại đây
+                        </p>
+                        <form action="#">
+                            <div className="input-group">
+                                <input type="text" placeholder="nhập mail vào " />
+                                <button type="submit" className="button-submit">
+                                    Đăng ký
+                                </button>
                             </div>
-                            <div>
-                                <FaInstagram />
+                            <div className="footer__widget__social">
+                                <div>
+                                    <FaFacebook />
+                                </div>
+                                <div>
+                                    <FaInstagram />
+                                </div>
+                                <div>
+                                    <FaYoutube />
+                                </div>
                             </div>
-                            <div>
-                                <FaYoutube />
-                            </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
+                   
                 </div>
             </div>
         </footer>
